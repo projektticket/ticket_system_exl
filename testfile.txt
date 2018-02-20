@@ -1,0 +1,41 @@
+Idee 1
+
+If Len(temp) > 13 And temp_assigned_to Like "######## ##:" And temp Like "*Assigned to:*" Then
+
+Cells(i, 5).Value = temp_assigned_to
+
+End If
+
+
+If abJetzNachKeywordSuchen = True And temp Like "Assigned to:*" Then
+Cells(i, 5).Value = "Assigned to: "
+If abJetzNachKeywordSuchen = True And temp_assignment_group Like "Assignment group:" Then
+If abJetzNachKeywordSuchen = True And temp_status Like "Status:" Then
+
+Cells(i, 5).Value = temp_assignment_group
+Cells(i, 5).Value = temp_status
+
+
+End If
+End If
+End If
+
+
+
+
+
+Idee 2
+
+temp_assigned_to = Trim(Left(temp, 0))
+
+If abJetzNachKeywordSuchen = True And Len(temp) > 13 And temp_assigned_to Like"######## ##:" And temp Like "*Assigned to:*" Then
+
+Cells(i, 5).Value = temp_assigned_to
+
+End If
+
+
+
+
+
+
